@@ -1,0 +1,21 @@
+<div class="datagrid-gen-view">
+<clr-datagrid
+        class="products-datagrid">
+    <clr-dg-column>
+        <ng-container> Product Name </ng-container>
+    </clr-dg-column>
+    <clr-dg-column>
+        <ng-container> Product Release Name </ng-container>
+    </clr-dg-column>
+    <clr-dg-row *clrDgItems="let item of list">
+        <clr-dg-cell>{{item.product}}</clr-dg-cell>
+        <clr-dg-cell>{{item.release}}</clr-dg-cell>
+    </clr-dg-row>
+    <clr-dg-footer>
+        <clr-dg-pagination #pagination [clrDgPageSize]="10">
+            <clr-dg-page-size [clrPageSizeOptions]="[10,20]">Products per page</clr-dg-page-size>
+            {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}} of {{pagination.totalItems}} products
+        </clr-dg-pagination>
+    </clr-dg-footer> -->
+  </clr-datagrid>
+</div>
